@@ -5,8 +5,8 @@ let g:mapleader = ","
 
 " Fast saving, sourceing and editing
 nnoremap <leader>w :write!<cr>
-nnoremap <leader>ev :edit $MYVIMRC<CR>
-nnoremap <leader>sv :source $MYVIMRC<CR>
+nnoremap <leader>ev :edit ~/.ideavimrc<CR>
+nnoremap <leader>sv :source ~/.ideavimrc<CR>
 
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
@@ -70,3 +70,15 @@ nmap <leader><leader>w :action KJumpAction.Word0<cr>
 
 " sourround
 set surround
+
+" Smart way to move between windows
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
+
+" Multi cursors
+set multiple-cursors
+
+" Toggle project
+nnoremap <leader>nn :action ActivateProjectToolWindow<CR>
