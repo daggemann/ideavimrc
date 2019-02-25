@@ -82,3 +82,10 @@ set multiple-cursors
 
 " Toggle project
 nnoremap <leader>nn :action ActivateProjectToolWindow<CR>
+
+" Close All Open files
+nnoremap <leader>ZZ :action CloseAllEditors<CR>
+nnoremap <leader>zz :action CloseAllEditorsButActive<CR>
+
+" Search everywhere
+nnoremap <C-p> :action SearchEverywhere<CR>
